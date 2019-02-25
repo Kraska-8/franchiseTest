@@ -1,0 +1,126 @@
+.contact-form{
+  margin-top: 20px;
+  @include respond-to(medium) {
+    width: 100%;
+    box-sizing: border-box;
+    padding:60px 90px;
+    border: 3px dotted rgba(0,0,0,0.3);
+    margin: 40px 0;
+  }
+  @include respond-to(large) {
+    width: 1200px;
+    padding:80px 120px;
+    margin: 60px auto;
+  }
+  &__validate{
+    @include respond-to(medium) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__capcha,
+  &__control{
+    @include respond-to(medium) {
+      width: 35%;
+    }
+  }
+}
+.contact-form__input-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+    @include respond-to(medium) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .contact-form__input-group-nemail,
+    .contact-form__input-group-pcity{
+      @include respond-to(medium) {
+        width: 45%;
+      }
+    }
+    input,
+    textarea{
+      box-sizing: border-box;
+      height: 28px;
+      display: block;
+      width: 100%;
+      color: $color-black;
+      font: {
+        size: 1em;
+        family: $font-stack-bold;
+      }
+      margin-bottom: 37px;
+      border-style: none none solid;
+      background: none;
+      text-transform: uppercase;
+      border-bottom: 3px solid $color-gainsboro;
+      border-radius: 0px;
+      @include respond-to(medium) {
+        font-size: 1.125em;
+        height: 45px;
+      }
+      @include respond-to(large) {
+        font-size: 1.125em;
+        height: 55px;
+      }
+      &:focus{
+        border-bottom: 3px solid $color-black;
+      }
+    }
+    textarea {
+      resize: none;
+      overflow-y: hidden;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+
+  .contact-form__control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    @include respond-to(medium) {
+      margin-top: 0;
+    }
+    button{
+      width: 100%;
+      letter-spacing: 0.1em;
+      color: $color-fallow;
+      font: {
+        size: 1.125em;
+        family: $font-stack-bold;
+      }
+      text-transform: uppercase;
+      cursor: pointer;
+      background: none;
+      border: 3px solid $color-fallow;
+      padding: 16px 0px;
+      transition: all 0.2s ease 0s;
+      @include respond-to(medium) {
+        font-size: 1em;
+      }
+      @include respond-to(large) {
+        font-size: 1.125em;
+      }
+    }
+    p {
+      width: 100%;
+      color: rgba(0,0,0,0.4);
+      line-height: 1.25em;
+      padding-top: 20px;
+      @include respond-to(medium) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .recapcha_error{
+    display: none;
+    color: $color-bittersweet;
+    margin-top: 20px;
+  }

@@ -1,0 +1,30 @@
+<section class="form-block">
+    <div class="form-block__content-wrapper content-wrapper">
+        <div class="form-block__heading">  
+            <h2><mark>открыть свой ресторан</mark></h2>
+        </div>
+        <form action="" autocomplete="off" class="form-block__form contact-form">
+            <div class="contact-form__input-group">
+                <div class="contact-form__input-group-nemail">
+                    <input type="text" required name="name" class="contact-form__input  contact-form__input_text" placeholder="Имя">
+                    <input type="email" required name="email" class="contact-form__input contact-form__input_email" placeholder="Электронная почта">
+                </div>
+               <div class="contact-form__input-group-pcity">
+                    <input type="text" required name="phone" class="contact-form__input  contact-form__input_phone" pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" placeholder="Контактный телефон">
+                    <input type="text" required name="city" class="contact-form__input  contact-form__input_text" placeholder="Город открытия">
+               </div>
+                <textarea rows="1" cols="40" name="msg" class="contact-form__input  contact-form__input_textarea" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="contact-form__validate">
+                <div class="contact-form__capcha">
+                    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="recapchaHandler"></div>
+                    <span class="recapcha_error"></span>
+                </div>
+                <div class="contact-form__control">
+                    <button type="submit" class="contact-form__button">отправить заявку</button>
+                    <p class="contact-form__agreement">Нажимая кнопку “Отправить заявку”, вы даёте согласие на обработку своих персональных данных</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

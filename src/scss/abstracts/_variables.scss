@@ -1,0 +1,15 @@
+
+$color-black: black;
+$color-white: white;
+$color-fallow: #bb9975;
+$color-lightgrey: #d9d9d9;
+$color-darkgrey: #1a1a1a;
+$color-matterhorn: #4c4c4c;
+$color-gainsboro: #d9d9d9;
+$color-bittersweet:#F95F5F;
+$color-cardinal:#BB172B;
+
+$breakpoints: (
+  'medium': (min-width: 1024px),
+  'huge': (min-width: 1300px),
+);

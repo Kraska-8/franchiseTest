@@ -1,0 +1,33 @@
+button {
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+  
+a{
+  text-decoration: none;
+}
+  
+blockquote{
+  margin: 0;
+}
+  
+ul,
+ol{
+  padding: 0;
+  margin-top: 0;
+}
+  
+input{
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+input:focus,
+input[type]:focus{   
+  outline: 0 none;
+}

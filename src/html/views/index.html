@@ -1,0 +1,12 @@
+<% var data = {
+  title: "Франшиза",
+  author: "Kate"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+<%= _.template(require('./../includes/UI/modal.html'))(data) %>
+<%= _.template(require('./../includes/franchiseSections/statSection.html'))(data) %>
+<%= _.template(require('./../includes/franchiseSections/offerSection.html'))(data) %>
+<%= _.template(require('./../includes/franchiseSections/conditionSection.html'))(data) %>
+<%= _.template(require('./../includes/franchiseSections/formSection.html'))(data) %>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

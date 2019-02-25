@@ -1,0 +1,13 @@
+$font-stack: 'Circe';
+$font-stack-bold: 'Circe - Extra Bold';
+
+@font-face {
+  font-family: 'Circe';
+  src: url(../fonts/Circe-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Circe - Extra Bold';
+  src: url(../fonts/Circe-ExtraBold.woff) format('woff');
+}
+

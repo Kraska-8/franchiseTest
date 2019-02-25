@@ -1,0 +1,41 @@
+.stat-block__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    @include respond-to(large) {
+      justify-content: space-around;
+    }
+    >div{
+      width:45%;
+      position: relative;
+      margin-top: 30px;
+      @include respond-to(medium) {
+        width:20%;
+        margin: 80px 0 90px;
+      }
+      strong{
+        font-size: 3em;
+        font-family: $font-stack-bold;
+        display: block;
+        color: $color-cardinal;
+        border-bottom: 4px dotted rgba(0, 0, 0, 0.19);
+        line-height: 1.5em;
+        @include respond-to(medium) {
+          font-size: 4em;
+        }
+        @include respond-to(large) {
+          font-size: 5.6em;
+        }
+      }
+      label{
+        font-size: 1em;
+        display: block;
+        margin: 12px 0;
+        @include respond-to(large) {
+          font-size: 1.125em;
+        }
+      }
+    }
+  }
+  

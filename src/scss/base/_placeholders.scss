@@ -1,0 +1,24 @@
+//Placeholders edit on browsers
+
+::-webkit-input-placeholder
+ { /* Chrome/Opera/Safari */
+  color: $color-lightgrey;
+  font-family: $font-stack;
+  text-transform: none;
+
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $color-lightgrey;
+  font-family: $font-stack;
+  text-transform: none;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $color-lightgrey;
+  font-family: $font-stack;
+  text-transform: none;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $color-lightgrey;
+  font-family: $font-stack;
+  text-transform: none;
+}

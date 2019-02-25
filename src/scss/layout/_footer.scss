@@ -1,0 +1,128 @@
+footer{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: $color-black;
+    .footer-block{
+      &__content-wrapper{
+        @include respond-to(medium) {
+          padding-top: 30px;
+          padding-bottom: 20px;
+        }
+        @include respond-to(large) {
+          padding-top: 40px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+      }
+      &__contacts{
+        font-style: normal;
+        border-bottom: 3px solid $color-darkgrey;
+        @include respond-to(medium) {
+          display: flex;
+          justify-content: center;
+        }
+        a{
+          color: $color-white;
+          padding-left: 10px;
+          @include respond-to(large) {
+            font-size: 1.125em;
+          }
+        }
+        &_phone,
+        &_email{
+          margin: 10px 0;
+          @include respond-to(medium) {
+            margin: 0 20px;
+          }
+        }
+        &_email{
+          margin-bottom: 30px;
+        }
+      }
+      &__navbar{
+        border-bottom: 3px solid $color-darkgrey;
+        ul {
+          height: 78px;
+          width: 100%;
+          line-height: 1.25em;
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: 30px 0px;
+          @include respond-to(medium) {
+            flex-direction: row;
+            height: auto;
+            justify-content: space-around;width: 80%;
+            margin: 30px auto;
+          }
+          li{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            a{
+              height: 100%;
+              color: $color-white;
+              font: {
+                family: $font-stack;
+                size: 1em;
+                weight: 400;
+              }
+              align-items: center;
+              @include respond-to(large) {
+                font-size: 1.125em;
+              }
+            }
+          }
+        }
+      }
+      &__socials{
+        border-bottom: 3px solid $color-darkgrey;
+        ul{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          list-style-type: none;
+          margin: 30px 0px;
+          padding: 0px;
+          @include respond-to(medium) {
+            margin: 19px auto;
+          }
+          li{
+            &:nth-last-child(1){
+              @include respond-to(medium) {
+                border-right: none;
+              }
+            }
+            @include respond-to(medium) {
+              min-width: 200px;
+              display: flex;
+              height: 60px;
+              -webkit-box-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              align-items: center;
+              border-right: 3px solid rgba(255, 255, 255, 0.125);
+            }
+            a{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          } 
+        }
+      }
+      &__rights{
+        width: 100%;
+        margin: 30px 0 10px;
+        @include respond-to(medium) {
+          text-align: center;
+        }
+        span{
+          color: $color-matterhorn;
+        }
+      }
+    }
+  }

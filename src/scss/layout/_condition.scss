@@ -1,0 +1,60 @@
+.condition-block{
+    background-color: $color-black;
+    &__items{
+      color: $color-white;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      @include respond-to(medium) {
+        flex-direction: row; 
+        justify-content: space-between;
+        margin-top: 180px;
+      }
+      @include respond-to(large) {
+        margin-top: 270px;
+      }
+    }
+    &__item {
+      margin-bottom: 35px;
+      @include respond-to(medium) {
+          width: 30%;
+          margin-bottom: 10px;
+      }
+      >div {
+        border-bottom: 4px dotted $color-matterhorn;
+      }
+      strong{
+        font: {
+          size: 3em;
+          family: $font-stack-bold;
+        }
+        color: $color-white;
+        line-height: 1.2em;
+        @include respond-to(medium) {
+            font-size: 4em;
+        }
+        @include respond-to(large) {
+            font-size: 5.625em;
+        }
+      }
+      small {
+        font: {
+          size: 1em;
+          family: $font-stack-bold;
+        }
+        text-transform: uppercase;
+        padding-left: 10px;
+        @include respond-to(large) {
+            font-size: 1.250em;
+        }
+      }
+      label{
+        padding-top: 10px;
+        display: block;
+        @include respond-to(large) {
+            font-size: 1.125em;
+        }
+      }
+    }
+  }
